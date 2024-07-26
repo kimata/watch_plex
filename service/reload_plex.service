@@ -1,0 +1,9 @@
+[Unit]
+Description=Auto reload PLEX device
+
+[Service]
+ExecStart=/usr/local/bin/reload_plex.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
