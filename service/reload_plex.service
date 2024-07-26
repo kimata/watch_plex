@@ -4,6 +4,9 @@ Description=Auto reload PLEX device
 [Service]
 ExecStart=/usr/local/bin/reload_plex.sh
 Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=reload_plex
 
 [Install]
 WantedBy=multi-user.target
